@@ -1,0 +1,30 @@
+// flexbox
+// @include flexbox(direction, wrap, justify, align)
+@mixin flexbox($d, $w, $j, $a) {
+  display: flex;
+  flex-direction: $d;
+  flex-wrap: $w;
+  justify-content: $j;
+  align-items: $a;
+}
+
+// paddinghack
+// @include paddinghack(width, ratiowidth, ratioheight, (childelement))
+@mixin paddinghack($cw, $rw, $rh, $c:null) {
+    position: relative;
+    width: $cw;
+    height: 0;
+    padding: (($rh / $rw) * $cw) 0 0 0;
+    display: block;
+    @if $c != null {
+        #{$c} {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

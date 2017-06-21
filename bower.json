@@ -1,0 +1,41 @@
+{
+  "name": "music-inspiration",
+  "authors": [
+    "Kim Schläpfer <kimschlaepfer3000@gmail.com> (*)"
+  ],
+  "description": "Music Inspiration with Spotify & Youtube API",
+  "main": [
+    "index.html",
+    "main.js"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "none"
+  ],
+  "license": "MIT",
+  "homepage": "*",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kimneu3000/music-inspiration"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "animatewithsass": "^3.2.2",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "tether": "^1.4.0"
+  }
+}
